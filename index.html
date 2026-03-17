@@ -52,3 +52,175 @@
 </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio São Cristóvão | A Melhor Escolha do Paraná</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #ffcc00;
+            --accent: #e63946;
+            --light: #f8f9fa;
+            --dark: #1d3557;
+        }
+
+        body { font-family: 'Inter', sans-serif; margin: 0; color: #333; scroll-behavior: smooth; }
+        
+        /* Hero Section - O impacto inicial */
+        .hero {
+            background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), url('escola-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .badge-premium {
+            background: var(--secondary);
+            color: var(--dark);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Seção de Diferenciais Rápidos */
+        .features-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            background: var(--dark);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .feature-item i { color: var(--secondary); margin-bottom: 10px; font-size: 1.5rem; }
+
+        /* Cards de Cursos e Grupos */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        .card:hover { transform: translateY(-10px); }
+        .card-content { padding: 25px; }
+        
+        .tag-tecnico { background: #4caf50; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; }
+
+        /* Destaque "Não é Integral" */
+        .time-highlight {
+            background: #fff3cd;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 20px;
+            border: 2px dashed #ffe69c;
+        }
+
+        .cta-button {
+            background: var(--accent);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover { background: #c1121f; transform: scale(1.05); }
+
+        footer { background: var(--dark); color: white; padding: 40px 20px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="badge-premium">🏆 Eleita a Melhor Escola da Cidade</div>
+    <h1>Colégio São Cristóvão</h1>
+    <p style="font-size: 1.2rem;">Certificado entre as melhores instituições do Paraná.</p>
+    <a href="#contato" class="cta-button">QUERO FAZER PARTE</a>
+</header>
+
+<div class="features-bar">
+    <div class="feature-item">
+        <i class="fas fa-clock"></i>
+        <p><strong>Período Regular</strong><br>Mais tempo para sua vida</p>
+    </div>
+    <div class="feature-item">
+        <i class="fas fa-code"></i>
+        <p><strong>Curso Técnico</strong><br>Desenvolvimento de Sistemas</p>
+    </div>
+    <div class="feature-item">
+        <i class="fas fa-robot"></i>
+        <p><strong>Robótica</strong><br>Equipe de Elite</p>
+    </div>
+</div>
+
+<section>
+    <div class="time-highlight">
+        <h2>🚀 Estude com Qualidade, Tenha Tempo para Você!</h2>
+        <p>Diferente de outras escolas, no São Cristóvão <strong>não somos tempo integral</strong>. <br>
+        Acreditamos que o aluno precisa de equilíbrio entre os estudos de alto nível e suas atividades pessoais, cursos extras e descanso.</p>
+    </div>
+
+    <div class="grid-container">
+        <div class="card">
+            <div class="card-content">
+                <span class="tag-tecnico">PROFISSIONALIZANTE</span>
+                <h3>Técnico em Desenv. de Sistemas</h3>
+                <p>Saia do colégio direto para o mercado de tecnologia. Aprenda programação, banco de dados e criação de apps com quem entende.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content" style="border-bottom-color: var(--secondary);">
+                <h3>🤖 Grupo de Robótica</h3>
+                <p>Participe de competições, monte seus próprios robôs e desenvolva o raciocínio lógico na prática com equipamentos de ponta.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>📢 Grêmio Estudantil</h3>
+                <p>Aqui o aluno tem voz! Um grêmio ativo que organiza eventos, campeonatos esportivos e representa os interesses dos estudantes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato" style="text-align: center; padding: 60px 20px; background: var(--light);">
+    <h2>Venha conhecer nossa estrutura!</h2>
+    <p>Agende uma visita e descubra por que somos referência no Paraná.</p>
+    <p>📍 Endereço da Escola | 📞 (XX) xxxx-xxxx</p>
+    <a href="https://wa.me/seunumeroaqui" class="cta-button" style="background: #25d366;">
+        <i class="fab fa-whatsapp"></i> Falar com a Secretaria
+    </a>
+</section>
+
+<footer>
+    <p>&copy; 2026 Colégio São Cristóvão - Excelência e Liberdade no Ensino.</p>
+</footer>
+
+</body>
+</html>
