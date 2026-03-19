@@ -1,199 +1,119 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escola Tech | Educação do Futuro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Colégio São Cristóvão | Excelência em Educar</title>
     <style>
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1e40af;
-            --text-main: #1f2937;
-            --text-light: #6b7280;
-            --bg-light: #f8fafc;
-            --white: #ffffff;
-            --transition: all 0.3s ease;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-light);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        /* Header & Nav */
-        header {
-            background: var(--white);
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .logo {
-            font-weight: 800;
-            font-size: 1.5rem;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: -1px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--text-main);
-            margin-left: 20px;
-            font-weight: 600;
-            transition: var(--transition);
-        }
-
-        nav a:hover {
-            color: var(--primary);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 100px 5%;
-            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-            color: var(--white);
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            letter-spacing: -1px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--white);
-            color: var(--primary);
-            padding: 12px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 800;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-        }
-
-        /* Seção de Conteúdo (Grid) */
-        .container {
-            padding: 80px 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 15px;
-            border: 1px solid #e5e7eb;
-            transition: var(--transition);
-        }
-
-        .card:hover {
-            border-color: var(--primary);
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            margin-bottom: 15px;
-            color: var(--primary);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--white);
-            padding: 40px 5%;
-            text-align: center;
-            border-top: 1px solid #e5e7eb;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            nav { display: none; } /* Idealmente um menu mobile aqui */
-        }
+        /* Estilo básico para visualização */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; }
+        header { background: #004488; color: white; padding: 2rem; text-align: center; }
+        nav { background: #eee; padding: 0.5rem; text-align: center; sticky: top; }
+        nav ul { list-style: none; padding: 0; }
+        nav li { display: inline; margin: 0 15px; }
+        section { padding: 2rem; max-width: 1000px; margin: auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; transition: 0.3s; }
+        .card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        footer { background: #222; color: white; text-align: center; padding: 1rem; margin-top: 20px; }
+        form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; }
+        input, textarea, button { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        button { background: #004488; color: white; cursor: pointer; border: none; }
+        button:hover { background: #003366; }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="logo">Escola<span>Tech</span></div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#cursos">Cursos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
+<header>
+    <h1>Colégio São Cristóvão</h1>
+    <p>Ensino de qualidade para um futuro brilhante</p>
+</header>
 
-    <section class="hero" id="home">
-        <h1>Transforme seu futuro hoje</h1>
-        <p>Uma escola focada em tecnologia, inovação e no desenvolvimento integral do aluno.</p>
-        <a href="#cursos" class="btn">Conheça nossos cursos</a>
-    </section>
+<nav>
+    <ul>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
 
-    <main class="container" id="cursos">
-        <div class="section-title">
-            <h2>Nossos Diferenciais</h2>
-            <p>Por que escolher a Escola Tech?</p>
+<section id="sobre">
+    <h2>Bem-vindos ao Colégio São Cristóvão</h2>
+    <p>Nossa escola oferece um ambiente acolhedor e inovador, com professores qualificados que visam o desenvolvimento integral dos alunos.</p>
+    
+    <div class="img-container">
+        <img src="escola1.jpg" alt="Fachada do Colégio São Cristóvão" style="width:100%; border-radius:10px;">
+    </div>
+
+    <h3>Nossos diferenciais</h3>
+    <ul>
+        <li><strong>Ensino Personalizado:</strong> Olhar atento a cada fase do aprendizado.</li>
+        <li><strong>Tecnologia:</strong> Laboratórios de robótica e salas multimídia.</li>
+        <li><strong>Projetos Interdisciplinares:</strong> Conectando teoria e prática.</li>
+        <li><strong>Socioemocional:</strong> Foco no desenvolvimento de habilidades para a vida.</li>
+    </ul>
+</section>
+
+<hr>
+
+<section id="cursos">
+    <h2>Nossos Níveis de Ensino</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Educação Infantil</h3>
+            <p>Aprender brincando com segurança e estímulo à curiosidade.</p>
         </div>
-
-        <div class="grid">
-            <div class="card">
-                <h3>Metodologia Ativa</h3>
-                <p>O aluno é o protagonista do aprendizado através de projetos práticos e reais.</p>
-            </div>
-            <div class="card">
-                <h3>Infraestrutura</h3>
-                <p>Laboratórios de última geração e ambientes colaborativos de alta tecnologia.</p>
-            </div>
-            <div class="card">
-                <h3>Corpo Docente</h3>
-                <p>Professores que atuam no mercado, trazendo experiência real para a sala de aula.</p>
-            </div>
+        <div class="card">
+            <h3>Ensino Fundamental</h3>
+            <p>Base sólida de conhecimentos e formação de hábitos de estudo.</p>
         </div>
-    </main>
+        <div class="card">
+            <h3>Ensino Médio</h3>
+            <p>Preparação intensiva para o ENEM e os principais vestibulares.</p>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Escola Tech - Todos os direitos reservados.</p>
-    </footer>
+<section id="noticias" style="background-color: #f9f9f9;">
+    <h2>Fique por dentro</h2>
+    <div class="grid">
+        <article class="card">
+            <h4>Matrículas Abertas 2026</h4>
+            <p>Garanta a vaga do seu filho com descontos especiais para antecipação.</p>
+            <small>Postado em 15/03/2026</small>
+        </article>
+        <article class="card">
+            <h4>Feira de Ciências</h4>
+            <p>Confira as fotos do evento que reuniu inovação e criatividade.</p>
+            <small>Postado em 10/03/2026</small>
+        </article>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Fale Conosco</h2>
+    <div class="grid">
+        <div>
+            <p>📍 Rua Principal, 123 - Centro</p>
+            <p>📞 (11) 4002-8922</p>
+            <p>📧 secretaria@saocristovao.com.br</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Como podemos ajudar?" rows="4"></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Colégio São Cristóvão. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 </html>
